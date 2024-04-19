@@ -2,8 +2,13 @@ import '../App.css';
 import Profile from './Profile';
 
 function AppProfile() {
+  const handleClick = event => {
+    console.log(event);
+  };
+
   return (
     <>
+      <button onClick={handleClick}>버튼</button>
       <Profile 
         image='https://images.pexels.com/photos/14865644/pexels-photo-14865644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         name='tester1'
