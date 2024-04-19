@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default function Profile(props) {
+export default function Profile({image, name, title}) {
   return (
     <div className='profile'>
       <img 
         className='photo'
-        src={props.image}
+        src={image}
         alt='sample'
       />
-      <h1>{props.name}</h1>
-      <p>{props.title}</p>
+      <h1>{name}</h1>
+      <p>{title}</p>
     </div>
   )
 }
