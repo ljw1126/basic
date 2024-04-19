@@ -55,3 +55,22 @@
   height: 200px;
   border-radius: 100%;
 }
+
+/* new 태그의 부모 */
+.avatar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+span.new {
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  position: absolute;
+  left: 70%;
+  top:10%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
