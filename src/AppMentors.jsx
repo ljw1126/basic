@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function AppMentor() {
     const [person, setPerson] = useState(initialPerson);
 
-    const handleAdd = () => {
+    const handleUpdate = () => {
         const target = prompt(`누구의 이름을 바꾸고 싶은가요?`);
         const current = prompt(`이름을 무엇으로 바꾸고 싶은가요?`);
 
@@ -18,7 +18,7 @@ export default function AppMentor() {
                 })
         }));
     }
-    const handleUpdate = () => {
+    const handleAdd = () => {
         const name = prompt("멘토 이름을 입력하세요");
         const title = prompt("멘토의 직함을 입력하세요");
 
@@ -50,8 +50,8 @@ export default function AppMentor() {
                    </li>
                 ))}
             </ul>
-            <button onClick={handleAdd}>멘토의 이름을 바꾸기</button>
-            <button onClick={handleUpdate}>멘토 추가하기</button>
+            <button onClick={handleUpdate}>멘토의 이름을 바꾸기</button>
+            <button onClick={handleAdd}>멘토 추가하기</button>
             <button onClick={handleDelete}>멘토 삭제하기</button>
         </div>
     );
